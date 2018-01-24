@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+</html>
+<script>
+		//加号：如果两边都是数据都是 number，那么它就会起到相加作用
+		//			如果两边有一个数据为字符串类型，那么它就会起到拼接作用
+		console.log(2+3); //5
+		console.log('2'+3); //23
+		console.log('你' + '好'); // 你好
+		var a = '1'; 
+		var b = '2';
+		console.log(a + b); //12
+		var c = 1;
+		var d = 2;
+		console.log(c + d); //3
+		console.log('c' + d); // c + 2 = c2
+
+		//多个运算从左到右
+		var e = 2;
+		var f = 5;
+		var g = 3;
+		var h = 4;
+		console.log(e + f + g +h); //14
+		console.log(e + f + 'g' +h); // 7+'g'+h  7g+4   7g4
+		console.log(e + f + h +'g'); // 11g
+		console.log('e'+ f + h + g); //ef  string e543
+</script>

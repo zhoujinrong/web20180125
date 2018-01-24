@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+</html>
+<script>
+		//字符串转数字
+		var a = '123'; //typeof string
+		console.log(parseInt(a));
+		var b = parseInt(a); //返回新的
+		console.log(typeof b); //number;
+		
+		var c = '12ab12';
+		console.log(parseInt(c)); //12
+		var d = '34.567';
+		console.log(parseInt(d)); //34
+
+		var e = '长沙';
+		console.log(parseInt(e)); //NaN
+		var f = '长沙12';
+		console.log(parseInt(f)); //从左往右，只要遇到不能转的就停止
+</script>
