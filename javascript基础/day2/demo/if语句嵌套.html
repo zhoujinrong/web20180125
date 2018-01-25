@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+</html>
+<script>
+	//用户先输入自己的性别，比如男、女。然后输入自己的年龄。判断能否结婚。
+	//男的22以上
+	//女的20以上
+	var sex = prompt('请输入你的性别');
+	var age = parseInt(prompt('请输入你的年龄'));
+	
+	if(sex == '男'){
+		if(age >= 22){
+			alert('恭喜你可以领证了')
+		}else{
+			alert('还是个小正太，慢慢长大')
+		}
+	}else if(sex == '女'){
+		if(age >= 20){
+			alert('你可以嫁人了');
+		}else{
+			alert('你还是个小萝莉')
+		}
+	}else{
+		alert('抱歉，性别未知')
+	}
+
+	//if(sex == '男' && age >= 22){
+	//	alert('你才能结婚')
+	//}else if(sex == '女' && age >= 20){
+	//	alert('可以嫁人了')
+	//}else{
+	//	alert('请输入正确定')
+	//}
+</script>

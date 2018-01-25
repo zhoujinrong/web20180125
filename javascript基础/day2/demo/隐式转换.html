@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+		
+ </body>
+</html>
+<script>
+	console.log(3 + '3'); //33 加号比较特殊，有两个作用，相加和拼接！ 相加会先去隐式转换然后再加两步
+												//拼接只有一步，计 算机是非常懒的，所一步能完成的，绝不会用二步
+	console.log(3 * '3'); // 9 字符串的3在参与数学运算（-*/%）的时候，会默默的自己去转换了，隐式转换
+	console.log(8 / '2'); // 4
+	console.log(5 - '2'); // 3
+	console.log(5 % '2'); // 1
+
+	console.log(3 * null); // null 空的意思，它就会隐式转换为 0
+	console.log(3 * true); // true 真，它就会隐式转换为 1
+	console.log(3 * false); //false 假, 它就会隐式转换为 0
+
+	console.log(3 * NaN); // NaN参与运算都会是NaN
+	console.log(3 * undefined); // undefined参与运算都是NaN
+
+	var str = '8天';
+	console.log(parseInt(str));
+	console.log(3 * str) //NaN
+
+	console.log(3 + 3); //6
+	console.log(3 + null); //3
+	console.log(3 + true); //4
+	console.log(3 + false); //3
+	console.log(3 + undefined); // NaN
+	console.log(3 + NaN); // NaN
+
+</script>

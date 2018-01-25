@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+		
+ </body>
+</html>
+<script>	
+		console.log(5 > 3);// true
+		console.log(5 < 3); // false
+
+		console.log(5 == 5); //true;
+		console.log(5 == '5'); //true 在关系运算当中，也会有隐式转换，所以字符串的5也会转成数字5
+		console.log(5 === '5'); //false 三个等号连类型 也要一起比较
+
+		console.log(5 != 5); //false
+		console.log(5 != '5'); //false 在关系运算当中，也会有隐式转换，所以字符串的5也会转成数字5
+		console.log(5 !== '5'); //true
+
+		console.log('A' > 'B'); //false
+		console.log('a' > 'b'); //false
+		console.log('A' > 'a'); //false
+		console.log('A' > '1'); //true
+
+		console.log(1 > null); //true
+		console.log(1 > false); //true
+		console.log(1 > true); //false
+
+		console.log('24哈哈' > 3); //false
+		console.log('24' > 3); //true
+
+		console.log(3 > 2 > 1); //true
+		//先算3 > 2  结果true
+		// true > 1  //false
+
+		console.log(3 > 2 == 1); //true
+		//先算3 > 2  结果true
+		// true > 1  //true
+</script>

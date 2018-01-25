@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+		
+ </body>
+</html>
+<script>
+		//与 并且 &&
+		console.log(true && true); //true
+		console.log(false && true); //false
+		console.log(false && false); //false
+
+		console.log(2 > 1 && 19 < 18); // false
+		//					true  &&  false
+
+		//||或者
+		console.log(true || true); //true
+		console.log(true || false); //true
+		console.log(false || false); // false
+
+		//非 !
+		console.log(!true); //false
+		console.log(!false); //true
+		console.log(!!!!!false); //true //奇数个就是对立面
+
+		console.log(true || false && !true || false); //true
+		//先算非		true || false && false || false
+		//再算与		true || false || false
+		//再算或,从左到右 true || false
+		//最终为true
+
+		//负性的值就是false
+		console.log( 0 && 1); //0
+		console.log(null && 1); //null
+		console.log('' && 1); // ''
+		console.log(undefined && 1); //undefined
+		console.log(false && 1); //false
+		console.log(NaN && 1); //NaN
+
+		console.log(undefined && 哈哈); //哈哈不报错
+		//console.log(哈哈 && undefined); //哈哈报错, 未找到
+		console.log('哈哈' && undefined); //
+</script>
